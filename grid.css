@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+}
+
+.father {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 100px 50px 300px;
+  column-gap: 10px;
+  row-gap: 10px;
+  /*gap:10px 을 하면 column row 다 적용 */
+}
+
+.child {
+  flex-basis: 30%;
+  background-color: burlywood;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

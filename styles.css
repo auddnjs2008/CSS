@@ -1,0 +1,49 @@
+body {
+  height: 100vh;
+}
+
+.father {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+
+  align-content: space-between;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .child:nth-child(2) {
+  align-self: center;
+}
+
+.child:nth-child(3) {
+  align-self: flex-end;
+} */
+
+/*order은 html을 바꿀수없을 때 유용 */
+
+/* .child:nth-child(1) {
+  order: 2;
+  align-self: center;
+} */
+
+/* .child:nth-child(2) {
+  order: 3; 
+} */
+
+/*box의 order은 기본적으로 0이다.  그래서  이렇게 주면 2가 맨끝으로 간다.*/
+
+.child:nth-child(2) {
+  background-color: black;
+  flex-grow: 1;
+  flex-shrink: 3;
+}

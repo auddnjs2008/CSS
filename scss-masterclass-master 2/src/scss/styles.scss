@@ -1,0 +1,263 @@
+@import "reset";
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  padding: 40px 140px;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 140px;
+
+  font-size: 12px;
+  margin-bottom: 50px;
+  background-color: white;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+    }
+    &:first-child {
+      li {
+        margin-right: 45px;
+      }
+    }
+    img {
+      transform: translateX(-70%);
+    }
+  }
+}
+
+button {
+  width: 241px;
+  height: 56px;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  background: rgba(0, 0, 0, 0); // 투명하게
+}
+
+main {
+  //margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .shop__wrapper {
+    background-image: url("./../../손톱.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 80px;
+    .shop__when {
+      margin-bottom: 38px;
+    }
+    .shop__title {
+      margin-bottom: 38px;
+      font-size: 40px;
+      width: 40%;
+      text-align: center;
+    }
+  }
+
+  .studios__wrapper {
+    width: 100%;
+    display: flex;
+    height: 625px;
+    margin-bottom: 80px;
+    .studios__img {
+      width: 50%;
+      background-image: url("./../../캡처2.PNG");
+      background-size: cover;
+    }
+    .studios__title-wrapper {
+      width: 50%;
+      background-color: #f3ede9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .studios__title {
+        margin-bottom: 38px;
+      }
+      .studios__content {
+        width: 70%;
+        font-size: 30px;
+        margin-bottom: 38px;
+        text-align: center;
+      }
+      .studios__button {
+        width: 60%;
+        border: 1px solid black;
+        color: black;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 79% 1% 20%;
+        justify-content: center;
+        align-items: center;
+        .studios__line {
+          background-color: black;
+          width: 2px;
+          height: 100%;
+        }
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .nail__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .nail__shop {
+      margin-bottom: 30px;
+      font-size: 12px;
+    }
+    .nail__title {
+      margin-bottom: 180px;
+      font-size: 30px;
+      font-weight: 300;
+    }
+    .nail__kindes-wrapper {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+      .kind-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          text-align: center;
+        }
+        img {
+          margin-bottom: 115px;
+        }
+
+        .nail__img-title {
+          margin-bottom: 15px;
+        }
+        .nail__img-color {
+          margin-bottom: 25px;
+          font-size: 25px;
+        }
+        .nail__img-value {
+          font-size: 12px;
+          font-weight: 400;
+          opacity: 0.5;
+          margin-bottom: 40px;
+        }
+        button {
+          border: 1px solid black;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .gift-wrapper {
+    width: 100%;
+    height: 90vh;
+    background-image: url("./../../gift.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    .gift__title {
+      font-size: 12px;
+      margin-bottom: 42px;
+    }
+    .gift__content {
+      font-size: 35px;
+      width: 35%;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    .gift__button {
+      border: 1px solid black;
+      color: black;
+    }
+  }
+
+  .grid-box {
+    width: 100%;
+    height: 1255px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    .grid__img-wrapper1 {
+      background-image: url("./../../그리드1.webp");
+      background-size: cover;
+    }
+    .grid__img-wrapper2 {
+      background-image: url("./../../그리드2.webp");
+      background-size: cover;
+    }
+    .grid__img-wrapper3 {
+      background-image: url("./../../그리드3.jpeg");
+      background-size: cover;
+    }
+
+    .grid__item {
+      background-color: #f3ede9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .grid__when {
+        margin-bottom: 50px;
+      }
+      .grid__title {
+        margin-bottom: 60px;
+        width: 60%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+      }
+      button {
+        color: black;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
